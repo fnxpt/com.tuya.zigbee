@@ -1,0 +1,64 @@
+{
+  "id": "smoke_sensor_2",
+  "name": {
+    "en": "Smoke Sensor (HS1SA)"
+  },
+  "class": "sensor",
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
+  "capabilities": [
+    "alarm_smoke",
+    "alarm_battery",
+    "measure_battery"
+  ],
+  "energy": {
+    "batteries": [
+      "CR123A"
+    ]
+  },
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "HEIMAN"
+    ],
+    "productId": [
+      "SMOK_V16",
+      "SMOK_V15",
+      "b5db59bfd81e4f1f95dc57fdbba17931",
+      "98293058552c49f38ad0748541ee96ba",
+      "SMOK_YDLV10",
+      "FB56-SMF02HM1.4",
+      "SmokeSensor-N-3.0",
+      "319fa36e7384414a9ea62cba8f6e7626",
+      "c3442b4ac59b4ba1a83119d938f283ab",
+      "SmokeSensor-EF-3.0",
+      "SMOK_HV14"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          1,
+          3,
+          1280,
+          2821
+        ],
+        "bindings": [
+          25
+        ]
+      }
+    },
+    "learnmode": {
+      "instruction": {
+        "en": "Press and hold down test switch until the LED blinks green."
+      }
+    }
+  }
+}
